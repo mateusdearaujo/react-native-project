@@ -11,11 +11,21 @@ import { SafeAreaView, StyleSheet } from 'react-native'
 // import Pai from './components/indireta/Pai'
 // import ContadorV2 from './components/contador/ContadorV2'
 // import Diferenciar from './components/Diferenciar'
-import ParImpar from './components/ParImpar'
+// import ParImpar from './components/ParImpar'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
 
 export default () => (
     <SafeAreaView style={style.App}>
-        <ParImpar num={3}/>
+        <Familia>
+            <Membro nome="Carlos" sobrenome="Arruda"/>
+            <Membro nome="Joao" sobrenome="Arruda"/>
+        </Familia>
+        <Familia>
+            <Membro nome="Ana" sobrenome="Silva"/>
+            <Membro nome="Julia" sobrenome="Silva"/>
+        </Familia>
+        {/*<ParImpar num={3}/>*/}
         {/*<Diferenciar/>*/}
         {/*<ContadorV2/>*/}
         {/*<Pai/>*/}
